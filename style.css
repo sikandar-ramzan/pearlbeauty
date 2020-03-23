@@ -147,8 +147,8 @@ ol {
 	color: #fff;
 	padding: 12px 30px;
 	min-width: 145px;
-	border: 2px solid #e22b63;
-	background: #e22b63;
+	border: 2px solid purple;
+	background: purple;
 	cursor: pointer;
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
@@ -159,7 +159,7 @@ ol {
 }
 
 .site-btn.sb-line {
-	color: #e22b63;
+	color: purple;
 	background: transparent;
 }
 
@@ -175,7 +175,15 @@ ol {
 
 /* Preloder */
 
-
+#preloder {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background: #fff;
+}
 
 .loader {
 	width: 40px;
@@ -190,7 +198,44 @@ ol {
 	-webkit-animation: loader 0.8s linear infinite;
 }
 
+@keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
 
+@-webkit-keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
 
 .element {
 	margin-bottom: 110px;
@@ -231,7 +276,7 @@ ol {
 }
 
 .accordion-area .panel-header .panel-link.collapsed {
-	background: #e22b63;
+	background: purple;
 	color: #fff;
 }
 
@@ -293,7 +338,7 @@ ol {
 }
 
 .tab-element .nav-tabs .nav-link.active {
-	background: black;
+	background: #000;
 	color: #fff;
 }
 
@@ -386,23 +431,17 @@ ol {
 ---------------------*/
 
 .header-section {
-	opacity: 100%;
-	position: relative;
-	background: black;
+	background: #1e1e1e;
 	padding: 0 15px;
-	border-bottom: 2px solid #e22b63;
+	border-bottom: 2px solid purple;
 }
 
 .header-warp {
-	position: relative;
 	max-width: 1613px;
 	margin: 0 auto;
 }
 
 .site-logo {
-	position: relative;
-	width: 10%;
-	height: 50%;
 	display: inline-block;
 }
 
@@ -422,7 +461,7 @@ ol {
 
 .main-menu li a {
 	display: inline-block;
-	color: rgb(0, 0, 0);
+	color: #fff;
 	font-size: 18px;
 	padding: 53px 24px;
 	-webkit-transition: all 0.3s;
@@ -430,11 +469,11 @@ ol {
 }
 
 .main-menu li a:hover {
-	color: #e22b63;
+	color: purple;
 }
 
 .main-menu li.active a {
-	background: #e22b63;
+	background: purple;
 }
 
 .main-menu li.active a:hover {
@@ -460,8 +499,8 @@ ol {
 }
 
 .hero-slider {
-	border: 2px solid #e22b63;
-	background: black;
+	border: 2px solid purple;
+	background: #1e1e1e;
 }
 
 .hero-slider .owl-dots {
@@ -485,7 +524,7 @@ ol {
 .hero-slider .owl-dot.active {
 	background: #000;
 	color: #fff;
-	border: 2px solid #e22b63;
+	border: 2px solid purple;
 }
 
 .hs-item {
@@ -514,7 +553,7 @@ ol {
 	height: 7px;
 	left: 0;
 	top: 0;
-	background: #e22b63;
+	background: purple;
 }
 
 .hs-content p {
@@ -550,7 +589,7 @@ ol {
 -----------------------*/
 
 .services-section {
-	background-color: #e22b63;
+	background-color: purple;
 }
 
 .services-section .container {
@@ -848,15 +887,15 @@ ol {
 	color: #fff;
 }
 
-.footer-bottom .FATIMA {
+.footer-bottom .copyright {
 	float: left;
 	padding-top: 3px;
 }
 
-.footer-bottom .FATIMA p {
+.footer-bottom .copyright p {
 	font-size: 14px;
 	margin-bottom: 0;
-	color: rgb(201, 25, 25);
+	color: #fff;
 	opacity: 0.17;
 }
 
